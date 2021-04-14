@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 1.	Написать функцию перехвата нажатия клавиш left arrow, right arrow, up arrow, down arrow
+2.	При нажатии на любую из клавиш появляется alert с названием нажатой клавиши
+3.	Запрещается использовать любые плагины, которые осуществляют перехват нажатых клавиш
+4.	Необходимо продолжать результат действия этих клавиш после закрытия alert -->
+
+<html>
+<head>
+<title></title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(document).keydown(function(e){
+	   switch(e.keyCode) {
+	       case 37:
+           alert('left arrow');
+           break;
+
+           case 39:
+           alert('right arrow');
+           break;
+
+           case 38:
+           alert('up arrow');
+           break;
+
+           case 40:
+           alert('down arrow');
+           break;
+
+           default:
+           break;
+	   }
+	});
+</script>
+</body>
+</html>
